@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Warangal</title>
+    <link rel="icon" type="image/x-icon" href="./icon.ico">
+
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+
+        }
+
+        /* Logo and Header */
+        header  {
+            padding: 20px 0;
+            
+        }
+      
+
+
+
+        hr {
+            border: 1px solid #ccc;
+            width: 90%;
+            margin: 10px auto;
+        }
+
+        /* Links & Navigation */
+        nav {
+            width: 100vw;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0073e6;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+     
+
+        nav img {
+            vertical-align: middle;
+            margin-left: 5px;
+
+        }
+
+        .image-slider img {
+            width: 100vw;
+        }
+
+        .announcement,
+        .image-slider {
+            margin: 20px 0;
+        }
+
+        .announcement marquee {
+            font-size: 18px;
+        }
+
+        .image-slider img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+
+        /* Marquee scrolling */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: marquee-animation 20s linear infinite;
+        }
+
+
+
+        .slider-container {
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+
+
+        }
+
+        .news {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .image-slider2 {
+            justify-content: start;
+            width: 30vw;
+        }
+
+        .text-slider2 {
+            justify-content: start;
+            width: 30vw;
+            height: 20vh;
+        }
+
+        .text-slider2 marquee {
+            justify-content: start;
+            width: 30vw;
+            height: 20vh;
+        }
+
+        span {
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .slider-container img {
+            width: 25vw;
+            margin: 0 10px;
+        }
+
+        .text-slider2 div {
+            width: 25vw;
+            margin: 0 10px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        /* GIAN Course section */
+        .gian-course {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .gian-course span {
+            display: block;
+            margin-top: 5px;
+        }
+        .campus{
+            margin-top: 10vh;
+            display: flex;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.png" alt="NIT Warangal Logo">
+    </header>
+
+    <hr>
+
+    <!-- Navigation links -->
+    <nav>
+        <a href="https://nitw.ac.in/">Institute</a>
+        <a href="#">Administration</a>
+        <a href="#">Academics</a>
+        <a href="#">R&D</a>
+        <a href="#">Students</a>
+        <a href="#">Alumni</a>
+        <a href="https://www.g20.org/en/">
+            <img src="./g20.png" height="20px" alt="G20">
+        </a>
+        <a href="https://amritmahotsav.nic.in/">
+            <img src="./akam.png" height="20px" alt="Amrit Mahotsav">
+        </a>
+    </nav>
+
+    <hr>
+
+    <!-- Announcements scrolling -->
+    <div class="announcement">
+        <marquee>
+            <span><b>New:</b> Submission of Annual Life Certificate by pensioners/family pension - Status of receipt as
+                of 10.12.2024</span>
+            <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span><b>New:</b> Recruitment of Officers and Non-Academic Staff on Direct Recruitment/ Deputation basis -
+                Last date: 07.01.2025</span>
+        </marquee>
+    </div>
+
+    <hr>
+
+    <!-- Images scrolling -->
+    <div class="image-slider">
+        <marquee behavior="" direction="">
+            <img src="./rep.jpg" alt="Image 1">
+            <img src="./rep2.jpg" alt="Image 2">
+            <img src="./rep3.jpg" alt="Image 3">
+            <img src="./rep4.jpg" alt="Image 4">
+            <img src="./rep5.jpg" alt="Image 5">
+        </marquee>
+    </div>
+    <div class="news">
+        <div class="image-slider2">
+            <span>Upcoming events</span>
+            <div class="slider-container">
+                <marquee behavior="" direction="">
+
+                    <img src="./eve1.jpg" alt="Gian Course 1">
+
+
+                    <img src="./eve2.jpg" alt="Gian Course 2">
+
+
+
+                    <img src="./eve3.jpg" alt="Gian Course 3">
+
+                </marquee>
+            </div>
+        </div>
+        <div class="text-slider2">
+            <span>Awards and Recognition</span>
+            <marquee direction="up">
+                <div>Prof. Arif Ali Baig Moghal received the Best Reviewer Award from the Indian Geotechnical Journal and the Outstanding Reviewer Recognition from the Journal of Hazardous, Toxic and Radioactive Waste.
+                </div>
+                <div>Prof. Manohar K, Assistant Professor, CH on being honored with "Excellence in Academics and Technology Development" Award by IITH
+
+                </div>
+                <div>Prof. Bose and Sri Nikhil Bharat (Department of Mechanical Engineering) have been granted an Indian Patent for their invention, "A Method of Manufacturing A Nanocomposite Material".
+
+                </div>
+                <div>ANRF has been recommended financial assistance for organising 17th National Workshop on RECENT TRENDS IN SOFTWARE TESTING (RTST - 2024) (Theme: Financial Security) in physical mode with Financial Assistance of Rs. 2,50,000 (Anusandhan National Research Foundation (ANRF) (A statutory body created by an Act of Parliament - ANRF Act, 2023 ) Science & Engineering Research Board (SERB) Seminar/Symposia Scheme) to Dr. Sangharatna Godboley and Dr. Sanjaya Kumar Panda (Coordinators).
+
+                </div>
+                
+
+            </marquee>
+
+        </div>
+        <div class="image-slider2">
+            <span>Seminars</span>
+            <div class="slider-container">
+                <marquee behavior="" direction="">
+                    <img src="./sem1.png" alt="Gian Course 1">
+
+
+                    <img src="./sem2.png" alt="Gian Course 2">
+
+
+
+                    <img src="./sem3.png" alt="Gian Course 3">
+                    <img src="./sem4.png" alt="Gian Course 3">
+
+                </marquee>
+            </div>
+        </div>
+    </div><div class="campus">
+        <marquee behavior="" direction="">
+        <img src="https://nitw.ac.in/api/static/files/Flashmob_2023-6-15-17-40-42.jpg" alt="">
+        <img src="https://nitw.ac.in/api/static/files/Swacchata_Campaign_on_27th_May,_2023_2023-6-14-11-32-13.jpg" alt="">
+        <img src="https://nitw.ac.in/media/files/Endowment-Gold-Medals-and-Cash-Prizes.jpg" alt="">
+        <img src="https://nitw.ac.in/api/static/files/ccpd2025_2025-1-1-16-11-23.jpg" alt="">
+        <img src="https://nitw.ac.in/api/static/files/nitwstafftournaments2024_2024-12-26-20-45-21.jpg" alt="">
+        <img src="https://nitw.ac.in/api/static/files/Swachhata_2024-12-9-15-19-12.jpg" alt="">
+    </marquee>
+    </div>
+    <hr>
+
+
+</body>
+
+</html>
